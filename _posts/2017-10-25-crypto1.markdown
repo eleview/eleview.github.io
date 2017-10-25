@@ -1,0 +1,80 @@
+---
+layout: post
+title: Cryptography crash course
+use_math: true
+---
+
+### Symmetric key cryptography
+
+Encryption: AES
+
+Alice and Bob share the same key _k_. The can encrypt any message communicated
+with _k_.
+
+- Problem: key distribution
+
+### Asymmetric key cryptography
+
+#### RSA and integer factorization
+
+- [RSA][1].
+
+- [RSA padding scheme - OAEP][2].
+
+- SHA2017 challenge _secure-login_
+[modified server program to run on your PC](/download/sec-log/modified_chall.py)
+[writeup](/download/sec-log/modified_writeup2.py)
+
+Key idea: forge signature of ticket _t_ by multiplying another 2 signatures.
+
+$$ \begin{align}
+t^d & \equiv b^d \cdot i^d \pmod n \\
+t & \equiv b \cdot i \pmod n
+\end{align}
+$$
+  Brute force _i_ to cater for server's signature padding scheme \(i.e. start
+with \xff\).
+
+- [Fermat's method for integer factorization][3]
+
+  Fermat's method makes it easy to factor products of primes that are close to 
+each other.
+
+- [Other integer factorization methods][4]
+
+#### Elgamal and discrete logrithms
+
+- [Elgamal encryption][5]
+  See also a [ppt demo](/download/ecc-dislog.pptx)
+
+- CTF challenge [prime-enigma](/download/prime-enigma/)
+
+  Key idea: Notice that 
+
+$$ g^d \equiv B \equiv p - 1 \equiv -1 \pmod p $$
+
+Given a [safe prime][9] _p_,
+$$ g^d \equiv -1 \pmod p \Rightarrow d \equiv
+\frac{p-1}{2} \pmod {p-1} $$
+
+Every element $ x $ of group $ \mathbb Z / p \mathbb Z $, its order is at most p-1.
+Therefore the order of $ x^{(p-1)/2} $ is at most 2.
+
+Then _k_ is simply equivlent to  -1 in group $ \mathbb Z / p \mathbb Z $
+
+$ m \equiv -c \pmod p $
+
+### Tools
+
+- [yafu][6] for interger factoring.
+
+- [sage][7] for Python-based math operations.
+
+[1]: https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation
+[2]: https://en.wikipedia.org/wiki/Optimal_asymmetric_encryption_padding#Diagram_of_OAEP
+[3]: https://en.wikipedia.org/wiki/Fermat%27s_factorization_method
+[4]: https://en.wikipedia.org/wiki/Integer_factorization#Factoring_algorithms
+[5]: https://en.wikipedia.org/wiki/ElGamal_encryption
+[6]: https://sourceforge.net/projects/yafu/
+[7]: http://www.sagemath.org/
+[9]: https://en.wikipedia.org/wiki/Safe_prime
