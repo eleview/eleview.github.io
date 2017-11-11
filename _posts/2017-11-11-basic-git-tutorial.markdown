@@ -84,8 +84,8 @@ By [zcc31415926][7].
 
 [1]: https://git-scm.com/
 [2]: https://en.wikipedia.org/wiki/Version_control
-[3]: https://git-scm.com/downloads/win
-[4]: https://git-scm.com/downloads/linux
-[5]: https://git-scm.com/downloads/mac
+[3]: https://git-scm.com/download/win
+[4]: https://git-scm.com/download/linux
+[5]: https://git-scm.com/download/mac
 [6]: https://github.com/
 [7]: https://github.com/zcc31415926
