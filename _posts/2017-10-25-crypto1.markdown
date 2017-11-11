@@ -37,7 +37,7 @@ with \xff\).
 
 - [Fermat's method for integer factorization][3]
 
-  Fermat's method makes it easy to factor products of primes that are close to 
+  Fermat's method makes it easy to factor products of primes that are close to
 each other.
 
 - [Other integer factorization methods][4]
@@ -49,7 +49,7 @@ each other.
 
 - CTF challenge [prime-enigma](/download/prime-enigma/)
 
-  Key idea: Notice that 
+  Key idea: Notice that
 
 $$ g^d \equiv B \equiv p - 1 \equiv -1 \pmod p $$
 
