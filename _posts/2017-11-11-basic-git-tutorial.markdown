@@ -4,7 +4,7 @@ title: Basic Git Tutorial
 use_math: true
 ---
 
-[Git][1] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency \\\(from the Git official website\\\). Below are my personal opinions.
+[Git][1] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency \\(from the Git official website\\). Below are my personal opinions.
 
 As a college weakchick in junior grade, I think of Git as an "efficient and convenient, but seldom used" tool. Not everyone knows what is "[version control][2]", and not everyone is glad to face the so-called "black window".
 
@@ -12,7 +12,7 @@ However, everyone faces the problems of needing-changes-more-than-you-can-bear d
 
 I have the "Digital Image Processing" class, which recommends Git as the homework platform. Here we mainly talk about commands used in the class.
 
-The class has a Git platform with 20 branches named C01 to C20\\\(20 groups of students\\\). We should upload weekly reports to specific branches and get the review from teaching assistant.
+The class has a Git platform with 20 branches named C01 to C20\\(20 groups of students\\). We should upload weekly reports to specific branches and get the review from teaching assistant.
 
 Note that Git repositories may have some branches, but they all have a trunk, which is often called "master".
 
@@ -50,13 +50,13 @@ Use "git status" to view what you have modified but not added, and what you have
 
 ### git clone
 
-Git is often with [GitHub][6]. If you just found a good repository on GitHub and want to copy it into your computer, use "git clone" followed by the repository address \\\(often ended with .git\\\) to clone the repository. The cloned repository is already initialized.
+Git is often with [GitHub][6]. If you just found a good repository on GitHub and want to copy it into your computer, use "git clone" followed by the repository address \\(often ended with .git\\) to clone the repository. The cloned repository is already initialized.
 
 ### git push
 
 If you have a GitHub repository and its local form in your computer, and you just made some changes and want to update it on GitHub, use "git push" command.
 
-Suppose the GitHub repository has 20 branches and a trunk, and you want to update your changes to a specific branch \\\(or trunk\\\), use "git push origin" followed by the branch \\\(or trunk\\\) name. For example, update the changes to branch C17 by "git push origin C17" and to the trunk by "git push origin master".
+Suppose the GitHub repository has 20 branches and a trunk, and you want to update your changes to a specific branch \\(or trunk\\), use "git push origin" followed by the branch \\(or trunk\\) name. For example, update the changes to branch C17 by "git push origin C17" and to the trunk by "git push origin master".
 
 ### git pull
 
