@@ -55,7 +55,6 @@ B1=ifft2(B2);
 B=uint8(B1);
 subplot(2,1,1);
 imshow(B);
-
 ```
 
 And an FDP is generated. Function [<code>fft2</code>][8] is to perform 2DFT on the image, and function [<code>fftshift</code>][9] is to make the initial point the center of the FDP. Process <code>A=(A-min(min(A)))/(max(max(A))-min(min(A)))*255</code> is to make the FDP a grayscale with pixel values ranging from 0-255.
